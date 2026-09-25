@@ -1,0 +1,220 @@
+
+
+/* General settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf3;
+    color: #30251f;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #ffffff;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #75452b;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: #30251f;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #a5683f;
+}
+
+/* Hero section */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f0dfcc;
+}
+
+.eyebrow {
+    color: #95603d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+.hero-text {
+    max-width: 500px;
+    margin: 0 auto 28px;
+    color: #62534a;
+}
+
+.button {
+    display: inline-block;
+    background: #75452b;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #4d2d1d;
+}
+
+/* Shared section styles */
+
+.section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin: 10px 0 30px;
+}
+
+/* Menu cards */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 35px;
+}
+
+.menu-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid #eee2d5;
+}
+
+.menu-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.menu-card h3 {
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    color: #74665d;
+    margin-bottom: 15px;
+}
+
+.menu-card span {
+    color: #75452b;
+    font-weight: bold;
+}
+
+/* About section */
+
+.about {
+    background: #f0dfcc;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Contact section */
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    background: #30251f;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero {
+        padding: 75px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 30px auto 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
